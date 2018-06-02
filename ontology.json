@@ -1,0 +1,94 @@
+{
+  "name": "AllServices",
+  "children": [
+    {
+      "name": "Service_UserAmount",
+      "children": [
+        {
+          "name": "Instantiation1",
+          "children": [
+            {
+              "name": "Service_UserAmount_Tianjin"
+            },
+            {
+              "name": "Service_UserAmount_Hebei"
+            },
+            {
+              "name": "Service_UserAmount_Beijing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Service_ETCTurnover",
+      "children": [
+        {
+          "name": "Instantiation2",
+          "children": [
+            {
+              "name": "Service_ETCTurnover_Tianjin"
+            },
+            {
+              "name": "Service_ETCTurnover_Hebei"
+            },
+            {
+              "name": "Service_ETCTurnover_Beijing"
+            }
+          ]
+        },
+        {
+          "name": "Component1",
+          "children": [
+            {
+              "name": "Service_ETCTransProvincialTurnover",
+              "children": [
+                {
+                  "name": "Instantiation5",
+                  "children": [
+                    {
+                      "name": "Service_ETCTransProvincialTurnover_Tianjin"
+                    },
+                    {
+                      "name": "Service_ETCTransProvincialTurnover_Hebei"
+                    },
+                    {
+                      "name": "Service_ETCTransProvincialTurnover_Beijing"
+                    }
+                  ]
+                },
+                {
+                  "name": "Instantiation7",
+                  "children": [
+                    {
+                      "name": "Service_ETCTransProvincialTurnover_HMRC"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Service_ETCProvincialTurnover",
+              "children": [
+                {
+                  "name": "Instantiation6",
+                  "children": [
+                    {
+                      "name": "Service_ETCProvincialTurnover_Tianjin"
+                    },
+                    {
+                      "name": "Service_ETCProvincialTurnover_Hebei"
+                    },
+                    {
+                      "name": "Service_ETCProvincialTurnover_Beijing"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
